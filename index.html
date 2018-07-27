@@ -327,7 +327,7 @@
 			.append("g")
             .attr("class", "detailgroup")
             .attr("transform", function(d) {
-                return "translate(" + (-width/4) + "," + (height/4 - 100) + ")" ;
+                return "translate(" + (-width/4) + "," + (height/4 - 120) + ")" ;
             });		
 			
 		//画节点外围的弧
@@ -364,7 +364,7 @@
            .text(detailtitle)
            .attr("class","title")
            .attr("x", -(width/4))		   
-           .attr("y", (height/2 - 130))
+           .attr("y", (height/2 - 150))
 		   .style("font-family", "Arial,微软雅黑")
 		   .style("font-size", "18px")
 		   .style("text-anchor", "middle");
@@ -380,7 +380,7 @@
             .style("fill", function(d) { return detailfill(d.source); })
             .attr("d", inner_chord)
             .attr("transform", function(d) {
-                return "translate(" + (-width/4) + "," + (height/4 - 100) + ")" ;
+                return "translate(" + (-width/4) + "," + (height/4 - 120) + ")" ;
             })
             .style("opacity", 1);
 			
@@ -450,7 +450,7 @@
 			.append("g")
             .attr("class", "marginalgroup")
             .attr("transform", function(d) {
-                return "translate(" + width/4 + "," + (height/4 - 100) + ")" ;
+                return "translate(" + width/4 + "," + (height/4 - 120) + ")" ;
             });		
 			
 		//画节点外围的弧
@@ -487,7 +487,7 @@
            .text(marginaltitle)
            .attr("class","title")
            .attr("x", width/4 + 20)
-           .attr("y", (height/2 - 130))
+           .attr("y", (height/2 - 150))
 		   .style("font-family", "Arial,微软雅黑")
 		   .style("font-size", "18px")
 		   .style("text-anchor", "middle");
@@ -503,7 +503,7 @@
             .style("fill", function(d) { return marginalfill(d.source); })
             .attr("d", inner_chord)
             .attr("transform", function(d) {
-                return "translate(" + width/4 + "," + (height/4 - 100) + ")" ;
+                return "translate(" + width/4 + "," + (height/4 - 120) + ")" ;
             })
             .style("opacity", 1);
 			
@@ -549,7 +549,7 @@
            .text(titleall1)
            .attr("class","title")
            .attr("x", 10)
-           .attr("y", (height/2 - 30))
+           .attr("y", (height/2 - 50))
 		   .style("font-family", "Arial,微软雅黑")
 		   .style("font-size", "22px")
 		   .style("text-anchor", "middle");
@@ -558,7 +558,7 @@
            .text(titleall2)
            .attr("class","title")
            .attr("x", 10)
-           .attr("y", (height/2))
+           .attr("y", (height/2 - 20))
 		   .style("font-family", "Arial,微软雅黑")
 		   .style("font-size", "22px")
 		   .style("text-anchor", "middle");
